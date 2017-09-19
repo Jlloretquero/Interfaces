@@ -1,0 +1,30 @@
+<html>
+    
+    <head>
+        <script type="text/javascript">
+       var nota1 = parseInt(prompt("Introduce la nota1"));
+       var nota2 = parseInt(prompt("Introduce la nota2"));
+       var nota3 = parseInt(prompt("Introduce la nota3"));
+
+       var nombre = prompt("Introduce tu nombre");
+
+       var media = (nota1+nota2+nota3)/3;
+
+       if (media >= 5){
+       document.write(`<b>Estimado ${nombre} su nota media es: ${media} por lo tanto esta aprovado</b>`);
+       }
+
+       else if (media >= 4){
+        document.write(`<b>Estimado ${nombre} su nota media es: ${media} casi ha superado los objetivos. Prepare la recuperación</b>`);
+       }
+
+       else {
+        document.write(`<b>Estimado ${nombre} su nota media es: ${media} por lo tanto esta suspendido. Prepare la recuperación</b>`);
+       }
+       
+        </script>
+    </head>
+    
+    <body>
+    </body>
+    </html>

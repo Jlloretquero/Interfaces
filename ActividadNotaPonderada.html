@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        var nota1 = parseInt(prompt("Introduce la nota1"));
+        var peso1 = parseInt(prompt("Peso de la nota 1"));
+
+        var nota2 = parseInt(prompt("Introduce la nota2"));
+        var peso2 = parseInt(prompt("Peso de la nota 2"));
+
+        var nota3 = parseInt(prompt("Introduce la nota3"));
+        var peso3 = parseInt(prompt("Peso de la nota 3"));
+
+        var pesoTotal = peso1 + peso2 + peso3;
+
+        if (pesoTotal != 100) {
+            document.write("El peso total no suma 100 <br> Paso a corregirlos<br>");
+
+            peso1 = 50;
+            peso2 = 33;
+            peso3 = 17;
+        }
+
+        var mediaPonderada = ((nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3)) / 100;
+        document.write(`La nota1 vale: ${nota1} y su peso es del : ${peso1}% <br>`);
+        document.write(`La nota2 vale: ${nota2} y su peso es del : ${peso2}% <br>`);
+        document.write(`La nota3 vale: ${nota3} y su peso es del : ${peso3}% <br>`);
+
+        if (mediaPonderada >= 5) {
+            document.write(`<b>La media ponderada es igual o superior a 5 <br> Concretamente ${mediaPonderada} <br></b>`);
+            document.write(`<h1 style = "color : red">!!ENHORABUENA!!</h1>`);
+        }
+
+        else if (mediaPonderada < 5) {
+            document.write(`<b>La media ponderada es inferior a 5 <br> Concretamente ${mediaPonderada} <br></b>`);
+            document.write(`<h1 style = "color:orange">NO SE DE POR VENCIDO</h1>`);
+        }
+    </script>
+</head>
+
+<body>
+</body>
+</html>
