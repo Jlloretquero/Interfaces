@@ -9,27 +9,37 @@
              if (numero1 > numero2){
                 
                  if (numero1 > numero3){
-                    document.write(`El numero mas grande es el numero1 : ${numero1}`);
+                    document.write(`El numero mas grande es el numero1 : ${numero1} <br>`);
                  }
 
                  else{
-                    document.write(`El numero mas grande es el numero3 : ${numero3}`);
+                    document.write(`El numero mas grande es el numero3 : ${numero3} <br>`);
                  }
              }
 
              else {
                 
                  if (numero2 < numero3){
-                    document.write(`El numero mas grande es el numero3 : ${numero3}`);
+                    document.write(`El numero mas grande es el numero3 : ${numero3} <br>`);
 
                  }
                  else {
-                    document.write(`El numero mas grande es el numero2 : ${numero2}`);
+                    document.write(`El numero mas grande es el numero2 : ${numero2} <br>`);
 
                  }
              }
 
-          
+             if (numero1 > numero2 && numero1 > numero3 ){
+                document.write(`El numero mas grande es el numero1 : ${numero1}`);
+             }
+
+             else if (numero2> numero1 && numero2 > numero3){
+                document.write(`El numero mas grande es el numero2 : ${numero2}`);
+             }
+
+             else {
+                document.write(`El numero mas grande es el numero3 : ${numero3}`); 
+             }
 
              </script>
     </head>

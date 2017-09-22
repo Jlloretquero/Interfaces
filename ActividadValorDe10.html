@@ -1,0 +1,45 @@
+<html>
+    <head>
+            <script type="text/javascript"> 
+             
+             var num1 = parseInt(prompt("Introduce el numero 1: "));
+             var num2 = parseInt(prompt("Introduce el numero 2: "));
+             var num3 = parseInt(prompt("Introduce el numero 3: "));
+
+             if (num1 < 10 && num2 < 10 && num3 < 10 ){
+                 document.write(`Lo tres valor son menores de 10`);
+             }
+
+             else if (num1 > 10 && num2 > 10 && num3 > 10){
+                document.write(`<p style = "color:grey">Lo tres valor son mayores de 10</p> <br>`);
+                document.write(`<b style = "color:grey">¡LINEA!</b>`);
+             } 
+
+             else if (num1 == 10 && num2 == 10 && num3 == 10){
+                document.write(`Lo tres valores son 10 <br>`);
+                document.write(`<h1 style = "color:green">¡BINGO!</h1>`);
+             }
+
+             
+             
+             else if(num1> 10 && num2>10){
+                document.write(`El numero 1 y el numero 2 son mayores que 10 <br>`);
+             }
+
+             else if(num2> 10 && num3>10){
+                document.write(`El numero 2 y el numero 3 son mayores que 10 <br>`);
+             }
+
+             else if(num1> 10 && num3>10){
+                document.write(`El numero 1 y el numero 3 son mayores que 10 <br>`);
+             }
+             else if(num1> 10){
+                document.write(`El numero 1 es mayor que 10 <br>`);
+             }
+             </script>
+    </head>
+
+    <body>
+            
+    </body>
+</html>
