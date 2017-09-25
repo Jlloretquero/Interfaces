@@ -7,20 +7,35 @@
              
 
              if (x > 0 && y > 0){
+                 document.write(`El valor de x es ${x} y el de y es ${y} <br>`);
                  document.write("Estas en el primer cuadrante");
              }
 
              else if (x > 0 && y < 0){
-                document.write("Estas en el segundo cuadrante");
-            }
-            else if (x < 0 && y > 0){
+                document.write(`El valor de x es ${x} y el de y es ${y} <br>`);
                 document.write("Estas en el cuarto cuadrante");
             }
+            else if (x < 0 && y > 0){
+                document.write(`El valor de x es ${x} y el de y es ${y} <br>`);
+                document.write("Estas en el segundo cuadrante");
+            }
              else if (x < 0 && y < 0){
+                document.write(`El valor de x es ${x} y el de y es ${y} <br>`);
                 document.write("Estas en el tercer cuadrante");
             }
-            else if (x == 25 && (y < 0){
-                document.write("Estas en el tercer cuadrante");
+            else if (x == 0 && (y < 0 || y >0)){
+                document.write(`El valor de x es ${x} y el de y es ${y} <br>`);
+                document.write("Esta sobre el eje de las y");
+            }
+
+            else if (y == 0 && (x < 0 || x >0)){
+                document.write(`El valor de x es ${x} y el de y es ${y} <br>`);
+                document.write("Esta sobre el eje de las x");
+            }
+
+            else if (x == 0 && y == 0){
+                document.write(`El valor de x es ${x} y el de y es ${y} <br>`);
+                document.write("Esta en el ORIGEN");
             }
              </script>
     </head>

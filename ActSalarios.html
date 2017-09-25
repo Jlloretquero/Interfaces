@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+    
+    var sueldo = parseInt(prompt("Introduce el salario del trabajador"));
+    var antiguedad = parseInt(prompt("Introduce la antiguedad del trabajador"));
+
+    if (sueldo <= 1000){
+        if (antiguedad >= 5 && antiguedad < 10){
+            document.write(`Su sueldo actual es de ${sueldo} y su antiguedad es de ${antiguedad} por tanto su sueldo subira un 5% siendo este ahora: <br>`)
+            sueldo = sueldo + (sueldo * 5 / 100); 
+            document.write(`${sueldo}€`);
+        }
+
+        else if (antiguedad >= 10){
+            document.write(`Su sueldo actual es de ${sueldo} y su antiguedad es de ${antiguedad} por tanto su sueldo subira un 20% siendo este ahora: <br>`)
+            sueldo = sueldo + (sueldo * 20 / 100); 
+            document.write(`${sueldo}€`);
+        }
+
+        else {
+            document.write("Pese a tener un salario inferior a 1000 euros no les corresponde ninguna subida");
+        }
+    }
+    
+    else {
+        document.write(`Su sueldo es de ${sueldo} por tanto debera esperar a la proxima revision de sueldos`);
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
