@@ -9,7 +9,7 @@
 </head>
 <body>
     <script type="text/javascript">
-        var producto = prompt("Introduce un color","clavos, tornillos, alcayatas, cancamos, buscafases, teflon");
+        var producto = prompt("Introduce un producto","clavos, tornillos, alcayatas, cancamos, buscafases, teflon");
         switch(producto){
     
             case "clavos":
@@ -36,7 +36,7 @@
                 document.write("El buscafases y el teflon estan en oferta");   
                 break;
 
-            default: document.write("Lo sentimos no disponemos este producto <br> Disculpen las molestias <br> ¿Alguna  consulta mas?");
+            default: document.write(`Lo sentimos no disponemos ${producto} <br> Disculpen las molestias <br> ¿Alguna  consulta mas?`);
             
         }
         </script>

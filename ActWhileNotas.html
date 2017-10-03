@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <script type="text/javascript">
+        
+        var contador = 1;
+        var aprobados=0;
+        var suspendidos=0;
+     
+        
+        while (10 >= contador) {
+            var nota = parseInt(prompt("Instroduce la nota",`nota numero ${contador}`));
+            
+            if(nota < 5){
+                suspendidos++;
+            }
+
+            else {
+                aprobados++;
+            }
+            
+            contador++;
+        }
+           document.write(`El numero total de suspendidos es: ${suspendidos} <br>`);
+           document.write(`El numero total de aprobados es: ${aprobados}`);
+
+        
+       
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
