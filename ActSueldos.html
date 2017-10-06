@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <script type="text/javascript">
+        var contador = 1;
+        var sueldoBajos = 0;
+        var sueldoAltos = 0;
+        var sueldoTotal = 0;
+
+
+        while (5 >= contador) {
+            var valor = parseInt(prompt("Introduce el sueldo de los empleados", `Sueldo del empleado ${contador} `));
+
+            sueldoTotal = valor + sueldoTotal;
+            
+
+            if (valor <= 1000 ) {
+                sueldoBajos++
+            }
+
+            else {
+                sueldoAltos++
+            }
+
+            contador++;
+        }
+
+        document.write(`La cantidad de empleados que cobran 1000€ o menos es: ${sueldoBajos} <br>`);
+        document.write(`La cantidad de empleados que cobran mas de 1000€ es: ${sueldoAltos} <br>`);
+        document.write(`El montante que la empresa invierte en sueldos es: ${sueldoTotal}€ <br>`);
+        
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

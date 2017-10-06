@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <script type="text/javascript">
+        
+        var total = 0;
+     
+        
+     
+        do{
+            var valor = parseInt(prompt("Introduce valores, pulse 999 para salir."))
+
+            
+            total = valor + total;
+            document.write(`El valor acumulado hasta el momento es ${total} <br>`);
+            
+
+            } while(valor != 999);
+            document.write(`<br>`);
+            document.write(`<br>`);
+            document.write(`<br>`);
+            document.write(`<br>`);
+            document.write(`<br>`);
+           
+            document.write(`El valor total acumulado es ${total} <br>`);
+            document.write(`<br>`);
+            document.write(`<br>`);
+            if (total > 0){
+                document.write(`El valor acumulado total es mayor a 0 <br>`);
+            }
+            else if (total == 0){
+                document.write(`El valor acumulado total es igual a 0 <br>`);
+            }
+            else{
+                document.write(`El valor acumulado total es menor a 0 <br>`);
+            }
+       
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

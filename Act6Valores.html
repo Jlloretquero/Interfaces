@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <script type="text/javascript">
+        var contador = 1;
+        var acumulador = 0;
+        var acumuladorB = 0;
+
+
+        while (3 >= contador) {
+            var valor = parseInt(prompt("Introduce los valores de A", `valor numero ${contador} A`));
+
+            acumulador = valor + acumulador;
+            contador++;
+        }
+
+
+        contador = 1;
+
+        while (3 >= contador) {
+            var valor = parseInt(prompt("Introduce los valores de B", `valor numero ${contador} B`));
+
+            acumuladorB = valor + acumuladorB;
+            contador++;
+        }
+
+
+        if (acumulador > acumuladorB) {
+            document.write(`La suma de los valores de A son mayores que los de B: (${acumulador} > ${acumuladorB})`);
+        }
+
+        else if (acumulador < acumuladorB) {
+            document.write(`La suma de los valores de B son mayores que los de A: (${acumulador} < ${acumuladorB})`);
+        }
+
+        else {
+            document.write(`La suma de los valores de A y B son iguales (${acumulador} = ${acumuladorB})`);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
