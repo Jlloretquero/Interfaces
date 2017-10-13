@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+    var numero = parseFloat(prompt("Introduce el numero para ver su tabla"));
+    var primerTermino = parseFloat(prompt("Introduce el primero numero por el que multiplicara"));
+    var incremento = parseFloat(prompt("Introduce el incremento en cada repeticion"));    
+    var repeticiones =parseFloat(prompt("Introduce el numero de repticiones"));
+    var acumulado = primerTermino;
+
+
+    for( i=0; i<repeticiones; i++ ){
+
+        if(i==0){
+            document.write(`${numero} X ${primerTermino} = ${numero*i} <br>`);
+        }
+       else {
+        document.write(`${numero} X ${acumulado = acumulado+incremento} = ${numero*acumulado} <br>`);
+       }
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

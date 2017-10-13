@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        
+        var area=0;
+        var contador=1;
+        var mayores= 0;
+
+        while(contador <4){
+
+            var altura = parseInt(prompt("Introduce la altura del triangulo"));
+            var base = parseInt(prompt("Introduce la base del triangulo"));
+            area = (base * altura)/2;
+            document.write(`Triangulo numero ${contador} <br>`);
+            document.write(`La altura es: ${altura} <br>`);
+            document.write(`La base es: ${base} <br>`);
+            document.write(`El area del triangulo es: ${area} <br> <br> <br> <br>`);
+
+
+
+            contador++
+            if(area >=12){
+                mayores = mayores + 1;
+            }
+
+            
+        }
+        if(mayores==0){
+            document.write(`Ningun triangulo tiene un area superior a 12 <br>`);
+        }
+        else if (mayores == 1){
+            document.write(`Es un triangulo el que su area es superior a 12 <br>`);
+        }
+        else if(mayores == 2 ){
+            document.write(`Son dos triangulos los que su area es superior a 12 <br>`);
+        }
+        else if (mayores == 2){
+            document.write(`Los tres triangulos tienes un area superior a 12 <br>`);
+        }
+        
+            
+     
+        </script>
+</body>
+</html>

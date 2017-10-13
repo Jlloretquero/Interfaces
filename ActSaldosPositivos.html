@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <script type="text/javascript">
+        var totalPositivo = 0;
+        do {
+
+
+            var numCuenta = parseInt(prompt("introduce el numero de cuenta"));
+            if (numCuenta != 0) {
+                var nombre = prompt("Introduce el nombre");
+                var saldo = parseInt(prompt("Introduce el saldo!"));
+
+                if (saldo < 0) {
+                    document.write(`${nombre} con numero de cuenta ${numCuenta} tiene un saldo de ${saldo}€ por lo tanto es un deudor <br>`);
+
+                }
+                else {
+                    document.write(`${nombre} con numero de cuenta ${numCuenta} tiene un saldo de ${saldo}€ por lo tanto es un acreedor <br>`);
+                    totalPositivo += saldo;
+                }
+
+            }
+
+
+
+
+        } while (numCuenta != 0);
+
+        document.write(`El total de saldo positivo es: ${totalPositivo}€ <br>`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
